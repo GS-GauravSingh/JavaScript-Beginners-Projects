@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- Title -->
+		<title>JS Project - Color Changer</title>
+
+		<!-- Link CSS -->
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<!-- Header -->
+		<header>
+			<a href="../index.html">Back to home</a>
+		</header>
+
+		<!-- Main -->
+		<main>
+			<div class="parent-container">
+				<h1>Number Guessing Game</h1>
+				<p>Try and guess a random number between 1 and 100.</p>
+				<p>You have 10 attempts to guess the right number.</p>
+
+				<form>
+					<label for="guessField">Guess a number</label>
+					<input type="text" id="guessField" name="userGuess" required autocomplete="off"/>
+					<p class="bottons-container">
+						<button type="submit" id="submitBtn">Submit Guess</button>
+					</p>
+				</form>
+
+				<div class="result-container">
+					<p>
+						Previous Gusses:
+						<span class="previousGuesses"></span>
+					</p>
+
+					<p>
+						Gusses Remaining:
+						<span class="remainingGuesses">10</span>
+					</p>
+					<p class="lowOrHigh"></p>
+				</div>
+			</div>
+		</main>
+	</body>
+
+	<!-- JavaScript -->
+	<script src="script.js"></script>
+</html>

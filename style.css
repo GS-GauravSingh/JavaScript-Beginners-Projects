@@ -1,0 +1,60 @@
+/* Google Fonts - Nunito */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+
+/* Basic Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+   background-color: var(--BODY-BG-COLOR);
+   color: var(--BODY-FONT-COLOR);
+   font-family: "Nunito", sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* || CSS Variables */
+:root{
+    --BODY-BG-COLOR: #333;
+    --BODY-FONT-COLOR: white;
+}
+
+
+/* || Main */
+main h1{
+    border-bottom: 1px solid white;
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
+.projects-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    row-gap: 0.5rem;
+}
+
+.projects-container a:first-child{
+    margin-top: 1rem;
+}
+
+.projects-container a{
+    text-align: center;
+    color: white;
+    padding: 1rem;
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+
+    background-color: var(--BODY-FONT-COLOR);
+    color: black;
+    font-weight: bold;
+    border-radius: 10px;
+}

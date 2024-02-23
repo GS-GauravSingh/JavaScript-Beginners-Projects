@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- Title -->
+		<title>JS Project - BMI Calculator</title>
+
+		<!-- Link CSS -->
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<!-- Header -->
+		<header>
+			<a href="../index.html">Back to home</a>
+		</header>
+
+		<!-- Main -->
+		<main>
+			<h1>BMI Calculator</h1>
+
+			<!-- Form -->
+			<form>
+				<p>
+					<label for="height">Height (in cm):</label>
+					<input
+						type="text"
+						name="userHeight"
+						id="height"
+						placeholder="cm"
+                        required
+                        autofocus
+                        autocomplete="on"
+                        class="inputValue"
+					/>
+				</p>
+
+				<p>
+					<label for="weight">Weight (in kg):</label>
+					<input
+						type="text"
+						name="userWeight"
+						id="weight"
+						placeholder="kg"
+                        required
+                        autocomplete="on"
+                        class="inputValue"
+					/>
+				</p>
+
+				<!-- Reset & Calculate Button -->
+				<p>
+					<button type="reset">Reset</button>
+					<button type="submit" id="submitBtn">Calculate</button>
+				</p>
+
+                <!-- Results -->
+                <div id="results"></div>
+			</form>
+
+			<!-- BMI Weight Guide -->
+			<table>
+				<thead>
+					<th class="columnOneHeader items">Category</th>
+					<th class="columnTwoHeader items">BMI Range</th>
+				</thead>
+
+				<tbody>
+					<tr>
+						<td class="item1 items">Underweight</td>
+						<td class="value1 items">Less than 18.5</td>
+					</tr>
+
+					<tr>
+						<td class="item2 items">Healthy weight range</td>
+						<td class="value2 items">18.5 - 24.9</td>
+					</tr>
+
+					<tr>
+						<td class="item3 items">Overweight</td>
+						<td class="value3 items">25 - 29.9</td>
+					</tr>
+
+					<tr>
+						<td class="item4 items">Obese</td>
+						<td class="value4 items">30.0 or higher</td>
+					</tr>
+
+					<tr>
+						<td class="item5 items">Obesity</td>
+						<td class="value5 items">30.0 - 39.9</td>
+					</tr>
+
+					<tr>
+						<td class="item6 items lastItem">Severe Obesity</td>
+						<td class="value6 items lastItem">40 or over</td>
+					</tr>
+				</tbody>
+			</table>
+		</main>
+	</body>
+
+	<!-- JavaScript -->
+	<script src="script.js"></script>
+</html>

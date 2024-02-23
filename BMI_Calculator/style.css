@@ -1,0 +1,122 @@
+/* Google Fonts - Nunito */
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+/* Basic Reset */
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: "Nunito", sans-serif;
+}
+
+a{
+	text-decoration: none;
+}
+
+/* || Header */
+header{
+}
+
+header a{
+    display: inline-block;
+    width: 100%;
+    
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: white;
+    font-size: 18px;
+}
+
+/* || Main */
+main{
+    max-width: 500px;
+    margin: 2vw auto 0vw auto;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main h1{
+    margin-bottom: 1rem;
+}
+
+/* Form Styles */
+form p:first-child{
+    margin-bottom: 0.5rem;
+}
+
+form input::placeholder{
+    text-align: right;
+    margin-right: 2px;
+}
+
+form label{
+    font-size: 18px;
+}
+
+form input{
+    font-size: 20px;
+    padding: 5px 0px;
+    border-radius: 5px;
+    margin-left: 10px;
+    text-indent: 5px;
+}
+
+form p:nth-child(3){
+    margin-top: 1rem;
+    text-align: center;
+}
+
+form button{
+    padding: 0.5rem;
+    margin: 0px 5px;
+    border-radius: 5px;
+    width: 100px;
+    cursor: pointer;
+}
+
+form button:hover{
+    background-color: bisque;
+}
+
+
+/* Table Styles */
+thead, tbody, tr{
+    display: contents;
+}
+
+table{
+    margin-top: 1rem;
+    border: 1px solid #333;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+    "header1 header2";
+}
+
+.columnOneHeader{
+    grid-area: header1;
+}
+
+.columnTwoHeader{
+    grid-area: header2;
+}
+
+.items{
+    padding: 0.5rem;
+    border-bottom: 1px solid #333;
+    display: flex;
+    justify-content: flex-start; 
+}
+
+.lastItem{
+    border: none;
+}
+

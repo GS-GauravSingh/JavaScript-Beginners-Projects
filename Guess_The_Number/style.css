@@ -1,0 +1,102 @@
+/* Google Fonts - Nunito */
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+/* Basic Reset */
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: "Nunito", sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+a{
+	text-decoration: none;
+}
+
+/* || Header */
+header a{
+
+    display: inline-block;
+    width: 100%;
+    
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: white;
+    font-size: 18px;
+}
+
+/* || Main */
+main{
+    flex-grow: 1;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2vw;
+}
+
+.parent-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* padding: 4rem; */
+}
+
+.parent-container h1{
+    padding: 1rem;
+}
+
+.parent-container form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0rem;
+}
+
+.parent-container form label{
+    font-size: 30px;
+}
+
+.parent-container form input{
+    font-size: 25px;
+    padding: 0.2rem;
+    border-radius: 10px;
+    margin: 0.5rem auto;
+    text-indent: 10px;
+}
+
+button{
+    margin: 0.5rem 0.6rem 0rem 0.6rem;
+    width: 120px;
+    padding: 0.5rem;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+}
+
+.result-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.result-container p:first-child{
+    margin-top: 1.5rem;
+}
+.result-container p{
+    width: 100%;
+    margin: 0.5rem auto;
+    text-align: center;
+}
